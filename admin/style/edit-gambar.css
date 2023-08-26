@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Poppins&display=swap');
+:root {
+    --huruf: #FAD810;
+    --bg-abu: rgb(19, 18, 18);
+    --bg-primary: rgb(14, 13, 13);
+    --putih: #fff;
+    --poppins: 'Poppins', sans-serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-abu);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    background-color: var(--bg-primary);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+.right {
+    display: flex;
+}
+.right li{
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 50px;
+}
+.right li:hover{
+    border-bottom: 3px solid var(--huruf);
+}
+.right li a{
+    color: #FAD810;
+}
+.home {
+    border-bottom: 3px solid var(--huruf);
+}
+
+/* form */
+.form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    background-color: var(--bg-primary);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    padding: 20px;
+    border-radius: 20px;
+}
+form ul li label {
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: var(--poppins);
+}
+form ul li input[type = 'text'], input[type = 'file']{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 5px;
+    font-family: var(--montserrat);
+    border: 1px solid var(--huruf);
+    border-radius: 10px;
+}
+form ul li input[type = 'file'] {
+    color: var(--putih);
+    border-radius: 5px;    
+}
+form ul li input[type='submit'] {
+    padding: 5px;
+    font-size: 20px;
+    font-family: var(--poppins);
+    border-radius: 5px;
+    border: 1px solid var(--huruf);
+}
+form ul li input[type='submit']:hover{
+    color: var(--bg-primary);
+    background-color: #FAD810;
+    cursor: pointer;
+}
+form ul li img{
+    width: 30%;
+    height: 30%;
+    margin: 0 0 20px 0;
+}
+form ul .gambar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

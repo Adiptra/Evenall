@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Poppins&display=swap');
+:root {
+    --huruf: #FAD810;
+    --bg-abu: rgb(19, 18, 18);
+    --bg-primary: rgb(14, 13, 13);
+    --putih: #fff;
+    --poppins: 'Poppins', sans-serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: var(--bg-abu);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bg-abu);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+.right {
+    display: flex;
+}
+.right li{
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 50px;
+}
+.right li:hover{
+    border-bottom: 3px solid var(--huruf);
+}
+.right li a{
+    color: #FAD810;
+}
+.profil {
+    border-bottom: 3px solid var(--huruf);
+}
+.pro{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    width: 70%;
+    border-radius: 10px;
+    background-color: var(--bg-primary);
+    height: auto;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+}
+.foto img {
+    width: 50%;
+    border-radius: 50%;
+    border: 1px solid var(--putih);
+    margin: 10px 0;
+}
+.followers{
+    display: flex;
+    justify-content: center;
+}
+.followers div {
+    margin: 0 20px;
+}
+.followers div h5{
+    font-size: 20px;
+    font-family: var(--lora);
+    color: var(--putih);
+}
+.followers div p {
+    font-family: var(--montserrat);
+    font-size: 20px;
+    margin-top: 2px;
+    color: var(--putih);
+}
+.group_detail .username h2{
+    font-size: 25px;
+    font-family: var(--montserrat);
+    margin: 15px 15px;
+    color: var(--putih);
+}
+.edit-btn{
+    display: flex;
+    justify-content: center;
+}
+.edit-btn a {
+    font-family: var(--montserrat);
+    font-size: 20px;
+    color: var(--putih);
+    border-radius: 10px;
+    background-color: var(--bg-primary);
+}
+.edit-btn a:hover{
+    color: var(--bg-primary);
+    background-color: var(--huruf);
+}
+.logout{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+
+}
+.logout a {
+    color: var(--putih);
+    padding: 10px;
+    border-radius: 5px;
+}
+.logout a:hover {
+    color: var(--bg-primary);
+    background-color: #FAD810;
+}

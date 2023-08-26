@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap');
+:root {
+    --huruf: #FAD810;
+    --bg-abu: rgb(19, 18, 18);
+    --bg-primary: rgb(14, 13, 13);
+    --putih: #fff;
+    --poppins: 'Poppins', sans-serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: var(--bg-abu);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bg-abu);
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+.right {
+    display: flex;
+}
+.right li{
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 50px;
+}
+.right li:hover{
+    border-bottom: 3px solid var(--huruf);
+}
+.right li a{
+    color: #FAD810;
+}
+.search {
+    border-bottom: 3px solid var(--huruf);
+}
+header {
+    width: 95%;
+    height: 50%;
+    padding: 0 20px;
+}
+header form input[type = 'text']{
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(94, 85, 85);
+    border-radius: 10px;
+    font-family: var(--poppins);
+}
+header form input[type = 'submit']{
+    width: 15%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(94, 85, 85);
+    border-radius: 10px;
+    font-family: var(--poppins);
+}
+header form input[type = 'submit']:hover{
+    background-color: var(--huruf);
+}
+header form {
+    padding: 20px 0;
+}
+
+.base{
+    display: flex;
+    justify-content: center;
+}
+.pembungkus-base{
+    width: 90%;
+    height: 100%;
+}
+.kataBased{
+    display: flex;
+    justify-content: space-between;
+}
+.kataBased h2{
+    font-size: 30px;
+    color: var(--putih);
+    font-family: var(--lora);
+}
+.kataBased a{
+    font-family: var(--montserrat);
+    text-decoration: none;
+    color: var(--putih);
+}
+.kataBased a:hover{
+    color: var(--huruf);
+}
+.lagu-base{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.isiBase{
+    background-color: var(--bg-primary);
+    width: 250px;
+    height: 370px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.isiBase2 img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.isiBase2 h5{
+    font-size: 20px;
+    font-family: var(--lora);
+    color: var(--putih);
+    padding: 10px 0;
+}
+.isiBase2 p{
+    font-family: var(--montserrat);
+    color: var(--putih);
+}

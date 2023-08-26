@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Poppins&display=swap');
+:root {
+    --huruf: #FAD810;
+    --bg-abu: rgb(19, 18, 18);
+    --bg-primary: rgb(14, 13, 13);
+    --putih: #fff;
+    --poppins: 'Poppins', sans-serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: var(--bg-abu);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bg-primary);
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+.right {
+    display: flex;
+}
+.right li{
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 50px;
+}
+.right li:hover{
+    border-bottom: 3px solid var(--huruf);
+}
+.right li a{
+    color: #FAD810;
+}
+.playlist {
+    border-bottom: 3px solid var(--huruf);
+}
+.history {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin-top: 30px;
+}
+.container {
+    background-color: var(--bg-primary);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.body-history {
+    display: flex;
+    padding: 20px;
+    /* background-color: red; */
+    width: 100%;
+}
+.detail-img img{
+    height: 100%;
+}
+.detail-img{
+    margin: 0 30px 0 0;
+}
+.detail-lagu {
+    width: 100%;
+}
+.detail-body {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 100%;
+}
+.nm_lagu h3{
+    font-size: 40px;
+    color: #fff;
+    font-family: var(--poppins);
+}
+.detail-body h5, .detail-body p{
+    font-size: 20px;
+    font-family: var(--montserrat);
+    color: #fff;
+}
+.body-history a{
+    position: relative;
+    color: red;
+    font-size: 20px;
+}

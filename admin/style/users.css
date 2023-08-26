@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Poppins&display=swap');
+:root {
+    --huruf: #FAD810;
+    --bg-abu: rgb(19, 18, 18);
+    --bg-primary: rgb(14, 13, 13);
+    --putih: #fff;
+    --poppins: 'Poppins', sans-serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: var(--poppins);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-abu);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    background-color: var(--bg-primary);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+.right {
+    display: flex;
+}
+.right li{
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 50px;
+}
+.right li:hover{
+    border-bottom: 3px solid var(--huruf);
+}
+.right li a{
+    color: #FAD810;
+}
+.home {
+    border-bottom: 3px solid var(--huruf);
+}
+
+/* tabel */
+table{
+    color: var(--putih);
+    border: none;
+    background-color: var(--bg-primary);
+    width: 80%;
+}
+table tbody tr td a {
+    text-decoration: none;
+    color: var(--putih);
+    padding: 10px;
+}
+.tabel {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+table thead tr th { 
+    text-align: left;
+    padding: 7px;
+    border-bottom: 1px solid #555;
+}
+table tbody tr td {
+    border-bottom: 1px solid #555;
+    padding: 7px;
+    background-color: #444;
+}
